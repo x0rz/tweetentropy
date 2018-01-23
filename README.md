@@ -4,6 +4,7 @@ Twitter is a great noise source: Russian bots, Trump rants, human interactions, 
 This tool provides an extra entropy source (to be used on Linux) from the [Twitter random sample feed](https://developer.twitter.com/en/docs/tweets/sample-realtime/overview/GET_statuse_sample).
 
 ![Twitter noise](https://i.imgur.com/vLdn9Az.jpg)
+
 *Twitter noise visualization*
 
 ### Installation
@@ -27,7 +28,7 @@ pip install -r requirements.txt
 
 ### Caveats
 
-⚠️ *Do not use this for sensitive cryptographic operations!*
+⚠️ **Do not use this for sensitive cryptographic operations!**
 We can safely assume there will be repeating occurrences in the data (trending hashtags, links, ...), it isn't true random. Entropy is around 6.5 bits per byte. 
 Only use this as an extra source of entropy if you wish.
 
